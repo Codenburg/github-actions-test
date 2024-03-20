@@ -34,3 +34,7 @@ jobs:
           echo "GitHub actor $GITHUB_ACTOR"
           echo "Repositorio $GITHUB_REPOSITORY"
 
+      - name: "Mostrando valores si el usuario es correcto"
+        if: ${{ env.username != '' && env.password != ''}}
+        run: |
+          echo "Si existe un usuario"
