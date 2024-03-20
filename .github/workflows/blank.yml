@@ -28,3 +28,6 @@ jobs:
       - name: "Mostrando variables por defecto"
         run: | # | significa que tiene varios pasos
           echo "Evento: ${{toJSON(github.event)}}"
+          echo "GitHub actor $GITHUB_ACTOR"
+          echo "Repositorio $GITHUB_REPOSITORY"
+
