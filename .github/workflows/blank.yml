@@ -12,6 +12,9 @@ jobs:
       region: us-east-1
       account: 123456
 
+      username: ${{secrets.USERNAME}}
+      password: ${{secrets.PASSWORD}}
+
     runs-on: ubuntu-latest
 
     steps:
